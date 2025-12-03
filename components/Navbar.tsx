@@ -2,11 +2,12 @@
 //Components
 import { useState } from 'react'
 import Link from "next/link"
+import NavbarButton from './NavbarButton'
 //Icons
-import { IoMenu, IoClose } from "react-icons/io5";
-import { CgWebsite } from "react-icons/cg";
-import { FaLinkedinIn } from "react-icons/fa";
-import { SiRefinedgithub } from "react-icons/si";
+import { IoMenu, IoClose } from "react-icons/io5"
+import { CgWebsite } from "react-icons/cg"
+import { FaLinkedinIn } from "react-icons/fa"
+import { SiRefinedgithub } from "react-icons/si"
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -22,78 +23,42 @@ export default function Navbar() {
                     </div>
                     <div className='md:flex gap-5 hidden'>
                         <div className="font-semibold flex items-center justify-center gap-1 flex-wrap max-w-[550px]">
-                            <button 
-                                type="button" 
-                                className="text-sm cursor-pointer uppercase bg-[#F2E7DC] border-2 border-[#F2E7DC] text-[#0D0D0D] px-3 py-1 rounded rounded-4 duration-500
-                                          hover:bg-transparent hover:text-[#F2E7DC]
-                                          focus:bg-transparent focus:text-[#F2E7DC]"
-                            >
-                                html
-                            </button>
-                            <button 
-                                type="button"
-                                className="text-sm cursor-pointer uppercase bg-[#F2E7DC] border-2 border-[#F2E7DC] text-[#0D0D0D] px-3 py-1 rounded rounded-4 duration-500
-                                          hover:bg-transparent hover:text-[#F2E7DC]
-                                          focus:bg-transparent focus:text-[#F2E7DC]"
-                            >
-                                react
-                            </button>
-                            <button 
-                                type="button"
-                                className="text-sm cursor-pointer uppercase bg-[#F2E7DC] border-2 border-[#F2E7DC] text-[#0D0D0D] px-3 py-1 rounded rounded-4 duration-500
-                                          hover:bg-transparent hover:text-[#F2E7DC]
-                                          focus:bg-transparent focus:text-[#F2E7DC]"
-                            >
-                                next.js
-                            </button>
-                            <button 
-                                type="button"
-                                className="text-sm cursor-pointer uppercase bg-[#F2E7DC] border-2 border-[#F2E7DC] text-[#0D0D0D] px-3 py-1 rounded rounded-4 duration-500
-                                          hover:bg-transparent hover:text-[#F2E7DC]
-                                          focus:bg-transparent focus:text-[#F2E7DC]"
-                            >
-                                css
-                            </button>
-                            <button 
-                                type="button" 
-                                className="text-sm cursor-pointer uppercase bg-[#F2E7DC] border-2 border-[#F2E7DC] text-[#0D0D0D] px-3 py-1 rounded rounded-4 duration-500
-                                          hover:bg-transparent hover:text-[#F2E7DC]
-                                          focus:bg-transparent focus:text-[#F2E7DC]"
-                            >
-                                bootstrap
-                            </button>
-                            <button 
-                                type="button"
-                                className="text-sm cursor-pointer uppercase bg-[#F2E7DC] border-2 border-[#F2E7DC] text-[#0D0D0D] px-3 py-1 rounded rounded-4 duration-500
-                                          hover:bg-transparent hover:text-[#F2E7DC]
-                                          focus:bg-transparent focus:text-[#F2E7DC]"
-                            >
-                                tailwind
-                            </button>
-                            <button 
-                                type="button"
-                                className="text-sm cursor-pointer uppercase bg-[#F2E7DC] border-2 border-[#F2E7DC] text-[#0D0D0D] px-3 py-1 rounded rounded-4 duration-500
-                                          hover:bg-transparent hover:text-[#F2E7DC]
-                                          focus:bg-transparent focus:text-[#F2E7DC]"
-                            >
-                                reactspring
-                            </button>
-                            <button 
-                                type="button"
-                                className="text-sm cursor-pointer uppercase bg-[#F2E7DC] border-2 border-[#F2E7DC] text-[#0D0D0D] px-3 py-1 rounded rounded-4 duration-500
-                                          hover:bg-transparent hover:text-[#F2E7DC]
-                                          focus:bg-transparent focus:text-[#F2E7DC]"
-                            >
-                                javascript
-                            </button>
-                            <button 
-                                type="button"
-                                className="text-sm cursor-pointer uppercase bg-[#F2E7DC] border-2 border-[#F2E7DC] text-[#0D0D0D] px-3 py-1 rounded rounded-4 duration-500
-                                          hover:bg-transparent hover:text-[#F2E7DC]
-                                          focus:bg-transparent focus:text-[#F2E7DC]"
-                            >
-                                typescript
-                            </button>
+                            <NavbarButton 
+                                btnText='html'
+                                classN='px-3 py-1'
+                            />
+                            <NavbarButton 
+                                btnText='react'
+                                classN='px-3 py-1'
+                            />
+                            <NavbarButton 
+                                btnText='next.js'
+                                classN='px-3 py-1'
+                            />
+                            <NavbarButton 
+                                btnText='css'
+                                classN='px-3 py-1'
+                            />
+                            <NavbarButton 
+                                btnText='bootstrap'
+                                classN='px-3 py-1'
+                            />
+                            <NavbarButton 
+                                btnText='tailwind'
+                                classN='px-3 py-1'
+                            />
+                            <NavbarButton 
+                                btnText='reactspring'
+                                classN='px-3 py-1'
+                            />
+                            <NavbarButton 
+                                btnText='javascript'
+                                classN='px-3 py-1'
+                            />
+                            <NavbarButton 
+                                btnText='typescript'
+                                classN='px-3 py-1'
+                            />
                         </div>
                     </div>
 
@@ -119,7 +84,13 @@ export default function Navbar() {
                     </div>
 
                     <div className="md:hidden">
-                        <button type='button' onClick={() => setIsOpen(!isOpen)}>
+                        <button 
+                            type='button' 
+                            onClick={() => setIsOpen(!isOpen)}
+                            className="text-sm cursor-pointer uppercase bg-[#F2E7DC] border-2 border-[#F2E7DC] text-[#0D0D0D] px-3 py-2 rounded rounded-4 duration-500
+                                        hover:bg-transparent hover:text-[#F2E7DC]
+                                        focus:bg-transparent focus:text-[#F2E7DC]"
+                        >
                             {isOpen ? <IoClose className="h-6 w-6" /> : <IoMenu className="h-6 w-6" />}
                         </button>
                     </div>
@@ -131,78 +102,42 @@ export default function Navbar() {
             >
                 <div className='flex flex-col gap-5'>
                     <div className="font-semibold flex items-center justify-center gap-1 flex-wrap max-w-[550px]">
-                        <button 
-                            type="button" 
-                            className="text-sm cursor-pointer uppercase bg-[#F2E7DC] border-2 border-[#F2E7DC] text-[#0D0D0D] px-3 py-1 rounded rounded-4 duration-500
-                                        hover:bg-transparent hover:text-[#F2E7DC]
-                                        focus:bg-transparent focus:text-[#F2E7DC]"
-                        >
-                            html
-                        </button>
-                        <button 
-                            type="button"
-                            className="text-sm cursor-pointer uppercase bg-[#F2E7DC] border-2 border-[#F2E7DC] text-[#0D0D0D] px-3 py-1 rounded rounded-4 duration-500
-                                        hover:bg-transparent hover:text-[#F2E7DC]
-                                        focus:bg-transparent focus:text-[#F2E7DC]"
-                        >
-                            react
-                        </button>
-                        <button 
-                            type="button"
-                            className="text-sm cursor-pointer uppercase bg-[#F2E7DC] border-2 border-[#F2E7DC] text-[#0D0D0D] px-3 py-1 rounded rounded-4 duration-500
-                                        hover:bg-transparent hover:text-[#F2E7DC]
-                                        focus:bg-transparent focus:text-[#F2E7DC]"
-                        >
-                            next.js
-                        </button>
-                        <button 
-                            type="button"
-                            className="text-sm cursor-pointer uppercase bg-[#F2E7DC] border-2 border-[#F2E7DC] text-[#0D0D0D] px-3 py-1 rounded rounded-4 duration-500
-                                        hover:bg-transparent hover:text-[#F2E7DC]
-                                        focus:bg-transparent focus:text-[#F2E7DC]"
-                        >
-                            css
-                        </button>
-                        <button 
-                            type="button" 
-                            className="text-sm cursor-pointer uppercase bg-[#F2E7DC] border-2 border-[#F2E7DC] text-[#0D0D0D] px-3 py-1 rounded rounded-4 duration-500
-                                        hover:bg-transparent hover:text-[#F2E7DC]
-                                        focus:bg-transparent focus:text-[#F2E7DC]"
-                        >
-                            bootstrap
-                        </button>
-                        <button 
-                            type="button"
-                            className="text-sm cursor-pointer uppercase bg-[#F2E7DC] border-2 border-[#F2E7DC] text-[#0D0D0D] px-3 py-1 rounded rounded-4 duration-500
-                                        hover:bg-transparent hover:text-[#F2E7DC]
-                                        focus:bg-transparent focus:text-[#F2E7DC]"
-                        >
-                            tailwind
-                        </button>
-                        <button 
-                            type="button"
-                            className="text-sm cursor-pointer uppercase bg-[#F2E7DC] border-2 border-[#F2E7DC] text-[#0D0D0D] px-3 py-1 rounded rounded-4 duration-500
-                                        hover:bg-transparent hover:text-[#F2E7DC]
-                                        focus:bg-transparent focus:text-[#F2E7DC]"
-                        >
-                            reactspring
-                        </button>
-                        <button 
-                            type="button"
-                            className="text-sm cursor-pointer uppercase bg-[#F2E7DC] border-2 border-[#F2E7DC] text-[#0D0D0D] px-3 py-1 rounded rounded-4 duration-500
-                                        hover:bg-transparent hover:text-[#F2E7DC]
-                                        focus:bg-transparent focus:text-[#F2E7DC]"
-                        >
-                            javascript
-                        </button>
-                        <button 
-                            type="button"
-                            className="text-sm cursor-pointer uppercase bg-[#F2E7DC] border-2 border-[#F2E7DC] text-[#0D0D0D] px-3 py-1 rounded rounded-4 duration-500
-                                        hover:bg-transparent hover:text-[#F2E7DC]
-                                        focus:bg-transparent focus:text-[#F2E7DC]"
-                        >
-                            typescript
-                        </button>
+                        <NavbarButton 
+                            btnText='html'
+                            classN='px-3 py-1'
+                        />
+                        <NavbarButton 
+                            btnText='react'
+                            classN='px-3 py-1'
+                        />
+                        <NavbarButton 
+                            btnText='next.js'
+                            classN='px-3 py-1'
+                        />
+                        <NavbarButton 
+                            btnText='css'
+                            classN='px-3 py-1'
+                        />
+                        <NavbarButton 
+                            btnText='bootstrap'
+                            classN='px-3 py-1'
+                        />
+                        <NavbarButton 
+                            btnText='tailwind'
+                            classN='px-3 py-1'
+                        />
+                        <NavbarButton 
+                            btnText='reactspring'
+                            classN='px-3 py-1'
+                        />
+                        <NavbarButton 
+                            btnText='javascript'
+                            classN='px-3 py-1'
+                        />
+                        <NavbarButton 
+                            btnText='typescript'
+                            classN='px-3 py-1'
+                        />
                     </div>
                 </div>
 
