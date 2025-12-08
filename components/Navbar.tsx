@@ -13,8 +13,8 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     return (
-        <nav className='bg-[#F2E7DC] relative border-black sticky w-full top-0 z-50'>
-            <div className="relative shadow-lg bg-[#0D0D0D] text-[#F2E7DC] max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-4">
+        <nav className='relative border-black sticky w-full top-0 z-50'>
+            <div className="relative shadow-lg bg-[#000000] text-[#FFFFFF] max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-4">
                 <div className="flex justify-between items-center py-5">
                     <div className='flex items-center gap-3'>
                         <CgWebsite size={50} className='xl:block sm:hidden lg:block' />
@@ -66,18 +66,18 @@ export default function Navbar() {
                         <Link 
                             href="https://www.linkedin.com/in/sergiy-b-623426159/"
                             target='_blank'
-                            className="cursor-pointer bg-[#F2E7DC] border-2 border-[#F2E7DC] text-[#0D0D0D] p-2 rounded rounded-4 duration-500
-                                        hover:bg-transparent hover:text-[#F2E7DC]
-                                        focus:bg-transparent focus:text-[#F2E7DC]"
+                            className="cursor-pointer bg-[#FFFFFF] border-2 border-[#FFFFFF] text-[#000000] p-2 rounded rounded-4 duration-500
+                                        hover:bg-transparent hover:text-[#FFFFFF]
+                                        focus:bg-transparent focus:text-[#FFFFFF]"
                         >
                             <FaLinkedinIn />
                         </Link>
                         <Link 
                             href="https://github.com/MrSeager"
                             target='_blank'
-                            className="cursor-pointer bg-[#F2E7DC] border-2 border-[#F2E7DC] text-[#0D0D0D] p-2 rounded rounded-4 duration-500
-                                        hover:bg-transparent hover:text-[#F2E7DC]
-                                        focus:bg-transparent focus:text-[#F2E7DC]"
+                            className="cursor-pointer bg-[#FFFFFF] border-2 border-[#FFFFFF] text-[#000000] p-2 rounded rounded-4 duration-500
+                                        hover:bg-transparent hover:text-[#FFFFFF]
+                                        focus:bg-transparent focus:text-[#FFFFFF]"
                         >
                             <SiRefinedgithub />
                         </Link>
@@ -87,9 +87,9 @@ export default function Navbar() {
                         <button 
                             type='button' 
                             onClick={() => setIsOpen(!isOpen)}
-                            className="text-sm cursor-pointer uppercase bg-[#F2E7DC] border-2 border-[#F2E7DC] text-[#0D0D0D] px-3 py-2 rounded rounded-4 duration-500
-                                        hover:bg-transparent hover:text-[#F2E7DC]
-                                        focus:bg-transparent focus:text-[#F2E7DC]"
+                            className="text-sm cursor-pointer uppercase bg-[#FFFFFF] border-2 border-[#F2E7DC] text-[#000000] px-3 py-2 rounded rounded-4 duration-500
+                                        hover:bg-transparent hover:text-[#FFFFFF]
+                                        focus:bg-transparent focus:text-[#FFFFFF]"
                         >
                             {isOpen ? <IoClose className="h-6 w-6" /> : <IoMenu className="h-6 w-6" />}
                         </button>
@@ -145,18 +145,18 @@ export default function Navbar() {
                     <Link 
                         href="https://www.linkedin.com/in/sergiy-b-623426159/"
                         target='_blank'
-                        className="cursor-pointer bg-[#F2E7DC] border-2 border-[#F2E7DC] text-[#0D0D0D] p-2 rounded rounded-4 duration-500
-                                    hover:bg-transparent hover:text-[#F2E7DC]
-                                    focus:bg-transparent focus:text-[#F2E7DC]"
+                        className="cursor-pointer bg-[#FFFFFF] border-2 border-[#FFFFFF] text-[#000000] p-2 rounded rounded-4 duration-500
+                                    hover:bg-transparent hover:text-[#FFFFFF]
+                                    focus:bg-transparent focus:text-[#FFFFFF]"
                     >
                         <FaLinkedinIn />
                     </Link>
                     <Link 
                         href="https://github.com/MrSeager"
                         target='_blank'
-                        className="cursor-pointer bg-[#F2E7DC] border-2 border-[#F2E7DC] text-[#0D0D0D] p-2 rounded rounded-4 duration-500
-                                    hover:bg-transparent hover:text-[#F2E7DC]
-                                    focus:bg-transparent focus:text-[#F2E7DC]"
+                        className="cursor-pointer bg-[#FFFFFF] border-2 border-[#FFFFFF] text-[#000000] p-2 rounded rounded-4 duration-500
+                                    hover:bg-transparent hover:text-[#FFFFFF]
+                                    focus:bg-transparent focus:text-[#FFFFFF]"
                     >
                         <SiRefinedgithub />
                     </Link>
