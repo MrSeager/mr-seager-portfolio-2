@@ -14,7 +14,7 @@ export default async function Home() {
   const data: PortfolioDataProps = await res.json();
 
   return (
-    <div className="bg-[#5E5E5E] flex flex-col items-center justify-center font-sans">
+    <div className="select-none bg-[#5E5E5E] flex flex-col items-center justify-center font-sans">
       <Navbar />
       <PortfolioMain
         data={data}
