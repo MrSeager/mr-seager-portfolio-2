@@ -1,5 +1,4 @@
-import Navbar from "@/components/Navbar";
-import PortfolioMain from "@/components/ProtfolioMain";
+import HomeClient from "@/components/HomeClient";
 import type { PortfolioDataProps } from "@/types/portfolioTypes";
 
 export default async function Home() {
@@ -15,8 +14,7 @@ export default async function Home() {
 
   return (
     <div className="select-none bg-[#5E5E5E] flex flex-col items-center justify-center font-sans">
-      <Navbar />
-      <PortfolioMain
+      <HomeClient
         data={data}
       />
     </div>

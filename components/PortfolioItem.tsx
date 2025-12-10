@@ -23,8 +23,8 @@ export default function PortfolioItem ({ item }: PortfolioItemsInt) {
     return(
         <div 
             tabIndex={0} 
-            className="shadow-[0_0_0_2px_#5e5e5e50] relative overflow-hidden group rounded rounded-[10px] grid grid-cols-2 gap-3 p-2 bg-[#FFFFFF] h-full items-center duration-400
-                        hover:scale-[1.03] hover:shadow-[0_0_0_3px_#f2050550]"
+            className="shadow-sm relative overflow-hidden group rounded rounded-[10px] grid grid-cols-2 gap-3 p-2 bg-[#FFFFFF] items-center duration-400
+                        hover:scale-[1.03] hover:shadow-xl"
         >
             <Image 
                 src={item.image} 
