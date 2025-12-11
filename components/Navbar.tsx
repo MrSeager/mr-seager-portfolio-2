@@ -25,6 +25,10 @@ export default function Navbar({ filters, setFilters }: NavbarProps) {
         );
     };
 
+    const handleClear = () => {
+        setFilters([]);
+    }
+
     const techs = [
         "html", "react", "next.js", "css", "bootstrap",
         "tailwind", "reactspring", "javascript", "typescript"
@@ -51,6 +55,12 @@ export default function Navbar({ filters, setFilters }: NavbarProps) {
                                         classN="px-3 py-1"
                                     />
                                 ))}
+                                <NavbarButton
+                                    btnText='Clear All'
+                                    active={false}
+                                    onClick={() => handleClear()}
+                                    classN="px-3 py-1"
+                                />
                             </div>
                         </div>
 

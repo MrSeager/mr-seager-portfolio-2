@@ -7,10 +7,11 @@ import Link from "next/link";
 import { FaDesktop, FaMobileAlt, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 interface PortfolioItemsInt {
-    item: PortfolioItemProps
+    item: PortfolioItemProps;
+    filters: string[];
 }
 
-export default function PortfolioItem ({ item }: PortfolioItemsInt) {
+export default function PortfolioItem ({ item, filters }: PortfolioItemsInt) {
     const handleVersionIcon = (ver: string) => {
         switch (ver) {
             case "desktop":
@@ -20,11 +21,16 @@ export default function PortfolioItem ({ item }: PortfolioItemsInt) {
         }
     }
 
+    const isVisible = 
+        filters.length === 0 ||
+        filters.every(f => item.technology.includes(f));
+
     return(
         <div 
             tabIndex={0} 
-            className="shadow-sm relative overflow-hidden group rounded rounded-[10px] grid grid-cols-2 gap-3 p-2 bg-[#FFFFFF] items-center duration-400
-                        hover:scale-[1.03] hover:shadow-xl"
+            className={`ease-in-out shadow-sm relative overflow-hidden group rounded rounded-[10px] grid grid-cols-2 gap-3 p-2 bg-[#FFFFFF] items-center transition-discrete duration-400
+                        hover:scale-[1.03] hover:shadow-xl
+                        ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none hidden"}`}
         >
             <Image 
                 src={item.image} 
@@ -58,7 +64,7 @@ export default function PortfolioItem ({ item }: PortfolioItemsInt) {
                             group-active:h-full group-active:py-3">
                 <div className="text-[#000000] flex items-center justify-center gap-3">
                     {item.version.map((ver: string) => (
-                        <span key={ver}>
+                        <span key={ver} className="animate-bounce mt-4">
                             {handleVersionIcon(ver)}
                         </span>
                     ))}
@@ -71,7 +77,7 @@ export default function PortfolioItem ({ item }: PortfolioItemsInt) {
                                     hover:bg-[#000000] hover:text-[#FFFFFF]
                                     focus:bg-[#000000] focus:text-[#FFFFFF]"
                     >
-                        <FaGithub size={25} />
+                        <FaGithub size={15} />
                     </Link>
                     <Link 
                         href={item.link}
@@ -80,7 +86,7 @@ export default function PortfolioItem ({ item }: PortfolioItemsInt) {
                                     hover:bg-[#000000] hover:text-[#FFFFFF]
                                     focus:bg-[#000000] focus:text-[#FFFFFF]"
                     >
-                        <FaExternalLinkAlt size={25} />
+                        <FaExternalLinkAlt size={15} />
                     </Link>                            
                 </div>
             </div>
