@@ -5,13 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 //Icons
 import { FaDesktop, FaMobileAlt, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+//Animation
+import { motion, AnimatePresence } from "framer-motion";
 
 interface PortfolioItemsInt {
     item: PortfolioItemProps;
-    filters: string[];
 }
 
-export default function PortfolioItem ({ item, filters }: PortfolioItemsInt) {
+export default function PortfolioItem ({ item }: PortfolioItemsInt) {
     const handleVersionIcon = (ver: string) => {
         switch (ver) {
             case "desktop":
@@ -21,16 +22,11 @@ export default function PortfolioItem ({ item, filters }: PortfolioItemsInt) {
         }
     }
 
-    const isVisible = 
-        filters.length === 0 ||
-        filters.every(f => item.technology.includes(f));
-
     return(
         <div 
             tabIndex={0} 
             className={`ease-in-out shadow-sm relative overflow-hidden group rounded rounded-[10px] grid grid-cols-2 gap-3 p-2 bg-[#FFFFFF] items-center transition-discrete duration-400
-                        hover:scale-[1.03] hover:shadow-xl
-                        ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none hidden"}`}
+                        hover:scale-[1.03] hover:shadow-xl`}
         >
             <Image 
                 src={item.image} 
