@@ -43,7 +43,10 @@ export default function PortfolioMain({ data, filters }: PortfolioMainProps) {
                         animate="show"
                         exit={{ opacity: 0, scale: 0.95 }}
                     >
-                        <PortfolioItem item={item} />
+                        <PortfolioItem 
+                            item={item} 
+                            filters={filters} 
+                        />
                     </motion.div>
                 ))}
             </AnimatePresence>

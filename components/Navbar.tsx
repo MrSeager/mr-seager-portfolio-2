@@ -113,6 +113,12 @@ export default function Navbar({ filters, setFilters }: NavbarProps) {
                                     classN="px-3 py-1"
                                 />
                             ))}
+                            <NavbarButton
+                                btnText='Clear All'
+                                active={false}
+                                onClick={() => handleClear()}
+                                classN="px-3 py-1"
+                            />
                         </div>
                     </div>
 

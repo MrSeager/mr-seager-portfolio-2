@@ -5,14 +5,13 @@ import Image from "next/image";
 import Link from "next/link";
 //Icons
 import { FaDesktop, FaMobileAlt, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-//Animation
-import { motion, AnimatePresence } from "framer-motion";
 
 interface PortfolioItemsInt {
     item: PortfolioItemProps;
+    filters: string[];
 }
 
-export default function PortfolioItem ({ item }: PortfolioItemsInt) {
+export default function PortfolioItem ({ item, filters }: PortfolioItemsInt) {
     const handleVersionIcon = (ver: string) => {
         switch (ver) {
             case "desktop":
@@ -25,8 +24,9 @@ export default function PortfolioItem ({ item }: PortfolioItemsInt) {
     return(
         <div 
             tabIndex={0} 
-            className={`ease-in-out shadow-sm relative overflow-hidden group rounded rounded-[10px] grid grid-cols-2 gap-3 p-2 bg-[#FFFFFF] items-center transition-discrete duration-400
-                        hover:scale-[1.03] hover:shadow-xl`}
+            className='ease-in-out h-full shadow-sm relative overflow-hidden group rounded rounded-[10px] grid grid-cols-2 gap-3 p-2 bg-[#FFFFFF] items-center transition-discrete duration-400
+                        hover:scale-[1.03] hover:shadow-xl
+                        focus:scale-[1.03] focus:shadow-xl'
         >
             <Image 
                 src={item.image} 
@@ -46,45 +46,45 @@ export default function PortfolioItem ({ item }: PortfolioItemsInt) {
                     {item.technology.map((tech: string) => (
                         <p 
                             key={tech}
-                            className="text-[12px]"
+                            className={`text-[12px] text-base/3 transition-colors
+                                        ${filters.includes(tech) ? "text-[#F20505]" : "text-[#5E5E5E]"}`}
                         >
                             #{tech}
                         </p>
                     ))}
                 </div>
             </div>
-            <div 
-                className="py-0 absolute bottom-0 w-full h-0 backdrop-blur bg-white/30 duration-400 flex flex-col justify-between
+            <div
+                className="py-0 overflow-hidden absolute bottom-0 w-full h-0 backdrop-blur bg-white/30 duration-400 flex items-center justify-around
                             group-hover:h-full group-hover:py-3
                             group-focus:h-full group-focus:py-3
-                            group-active:h-full group-active:py-3">
+                            group-active:h-full group-active:py-3"
+            >
+                <Link
+                    href={item.repasitory}
+                    target='_blank'
+                    className="cursor-pointer bg-transparent border-3 border-[#000000] text-[#000000] p-2 rounded rounded-4 duration-300
+                                hover:bg-[#000000] hover:text-[#FFFFFF]
+                                focus:bg-[#000000] focus:text-[#FFFFFF]"
+                >
+                    <FaGithub size={15} />
+                </Link>
                 <div className="text-[#000000] flex items-center justify-center gap-3">
                     {item.version.map((ver: string) => (
-                        <span key={ver} className="animate-bounce mt-4">
+                        <span key={ver} className="animate-bounce">
                             {handleVersionIcon(ver)}
                         </span>
                     ))}
                 </div>
-                <div className="flex justify-between px-3">
-                    <Link 
-                        href={item.repasitory}
-                        target='_blank'
-                        className="cursor-pointer bg-transparent border-3 border-[#000000] text-[#000000] p-2 rounded rounded-4 duration-300
-                                    hover:bg-[#000000] hover:text-[#FFFFFF]
-                                    focus:bg-[#000000] focus:text-[#FFFFFF]"
-                    >
-                        <FaGithub size={15} />
-                    </Link>
-                    <Link 
-                        href={item.link}
-                        target='_blank'
-                        className="cursor-pointer bg-transparent border-3 border-[#000000] text-[#000000] p-2 rounded rounded-4 duration-300
-                                    hover:bg-[#000000] hover:text-[#FFFFFF]
-                                    focus:bg-[#000000] focus:text-[#FFFFFF]"
-                    >
-                        <FaExternalLinkAlt size={15} />
-                    </Link>                            
-                </div>
+                <Link 
+                    href={item.link}
+                    target='_blank'
+                    className="cursor-pointer bg-transparent border-3 border-[#000000] text-[#000000] p-2 rounded rounded-4 duration-300
+                                hover:bg-[#000000] hover:text-[#FFFFFF]
+                                focus:bg-[#000000] focus:text-[#FFFFFF]"
+                >
+                    <FaExternalLinkAlt size={15} />
+                </Link>
             </div>
         </div>
     );
