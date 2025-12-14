@@ -15,10 +15,10 @@ export default function HomeClient({ data }: HomeClientProps) {
   const [filters, setFilters] = useState<string[]>([]);
 
   return (
-    <div className="min-h-screen select-none bg-[#5E5E5E] flex flex-col items-center font-sans w-full">
+    <span className="min-h-screen select-none bg-[#5E5E5E] flex flex-col items-center font-sans w-full">
       <Navbar filters={filters} setFilters={setFilters} />
       <PortfolioMain data={data} filters={filters} />
       <PortfolioFooter />
-    </div>
+    </span>
   );
 }
