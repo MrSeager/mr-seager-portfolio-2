@@ -24,9 +24,12 @@ export default function PortfolioItem ({ item, filters }: PortfolioItemsInt) {
     return(
         <div 
             tabIndex={0} 
-            className='ease-in-out h-full shadow-sm relative overflow-hidden group rounded rounded-[10px] grid grid-cols-2 gap-3 p-2 bg-[#FFFFFF] items-center transition-discrete duration-400
+            className="ease-in-out h-full shadow-sm relative overflow-hidden group rounded rounded-[10px] grid grid-cols-2 gap-3 p-2 bg-[#FFFFFF] items-center transition-discrete duration-400
                         hover:scale-[1.03] hover:shadow-xl
-                        focus:scale-[1.03] focus:shadow-xl'
+                        focus:scale-[1.03] focus:shadow-xl
+                        
+                        before:content-[''] before:absolute before:top-10 before:bottom-10
+                        before:left-1/2 before:w-px before:bg-black"
         >
             <Image 
                 src={item.image} 
