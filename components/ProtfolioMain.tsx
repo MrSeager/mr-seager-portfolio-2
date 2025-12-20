@@ -20,7 +20,7 @@ export default function PortfolioMain({ data, filters }: PortfolioMainProps) {
         <main className="bg-black/75 w-full flex-1 flex">
             <motion.div
                 layout
-                className="mx-auto grid grid-cols-1 auto-rows-max sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-full max-w-[100rem] gap-3 bg-[#B2B2B2] shadow-lg py-5 px-4 duration-1000"
+                className="mx-auto grid grid-cols-1 auto-rows-max sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-full max-w-[120rem] gap-3 bg-[#B2B2B2] shadow-lg py-5 px-4 duration-1000"
                 variants={{
                     show: {
                         transition: {

@@ -37,7 +37,7 @@ export default function Navbar({ filters, setFilters }: NavbarProps) {
     return (
         <header className="sticky top-0 z-50 w-full bg-black/75">
             <nav className='relative'>
-                <div className="relative shadow-lg bg-[#000000] text-[#FFFFFF] max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-4">
+                <div className="relative shadow-lg bg-[#000000] text-[#FFFFFF] max-w-[120rem] mx-auto px-4 sm:px-6 lg:px-4">
                     <div className="flex justify-between items-center py-5">
                         <div className='flex items-center gap-3'>
                             <CgWebsite size={50} className='xl:block sm:hidden lg:block' />
