@@ -1410,6 +1410,25 @@
       ],
       "link": "https://qrates-why-page-exercise.vercel.app/",
       "repasitory": "https://github.com/MrSeager/qrates-why-page-exercise"
+    },
+    {
+      "id": 76,
+      "image": "/images/076.jpg",
+      "title": "Smart Home Landing Page",
+      "technology": 
+      [
+        "next.js",
+        "react",
+        "tailwind",
+        "typescript"
+      ],
+      "version": 
+      [
+        "desktop",
+        "mobile"
+      ],
+      "link": "https://smart-home-page.vercel.app/",
+      "repasitory": "https://github.com/MrSeager/smart-home-page"
     }
   ]
 }
