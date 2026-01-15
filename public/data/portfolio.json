@@ -1429,6 +1429,25 @@
       ],
       "link": "https://smart-home-page.vercel.app/",
       "repasitory": "https://github.com/MrSeager/smart-home-page"
+    },
+    {
+      "id": 76,
+      "image": "/images/077.jpg",
+      "title": "Typing speed test",
+      "technology": 
+      [
+        "next.js",
+        "react",
+        "tailwind",
+        "typescript"
+      ],
+      "version": 
+      [
+        "desktop",
+        "mobile"
+      ],
+      "link": "https://typing-speed-test-mrseager.vercel.app/",
+      "repasitory": "https://github.com/MrSeager/typing-speed-test-mrseager"
     }
   ]
 }
