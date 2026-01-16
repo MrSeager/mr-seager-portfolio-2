@@ -6,7 +6,7 @@ import { TbBrandTypescript } from "react-icons/tb";
 
 export default function PortfolioFooter() {
     return (
-        <footer className="w-full bg-black/75">
+        <footer className="w-full bg-black/75 text-white">
             <div className="bg-[#000000] max-w-[120rem] mx-auto p-4 flex flex-col gap-5 max-sm:items-center">
                 <h3 className="flex items-center gap-2 font-semibold text-[30px]">Front-End <FaGlobe /></h3>
                 <ul className="mx-auto text-center">
