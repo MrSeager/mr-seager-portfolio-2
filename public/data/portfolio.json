@@ -1448,6 +1448,25 @@
       ],
       "link": "https://typing-speed-test-mrseager.vercel.app/",
       "repasitory": "https://github.com/MrSeager/typing-speed-test-mrseager"
+    },
+    {
+      "id": 78,
+      "image": "/images/078.jpg",
+      "title": "Interactive comments section",
+      "technology": 
+      [
+        "next.js",
+        "react",
+        "tailwind",
+        "typescript"
+      ],
+      "version": 
+      [
+        "desktop",
+        "mobile"
+      ],
+      "link": "https://interactive-comments-mrseager.vercel.app/",
+      "repasitory": "https://github.com/MrSeager/interactive-comments-mrseager"
     }
   ]
 }
