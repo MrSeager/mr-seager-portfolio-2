@@ -1467,6 +1467,25 @@
       ],
       "link": "https://interactive-comments-mrseager.vercel.app/",
       "repasitory": "https://github.com/MrSeager/interactive-comments-mrseager"
+    },
+    {
+      "id": 79,
+      "image": "/images/079.jpg",
+      "title": "Monstercat page",
+      "technology": 
+      [
+        "next.js",
+        "react",
+        "tailwind",
+        "typescript"
+      ],
+      "version": 
+      [
+        "desktop",
+        "mobile"
+      ],
+      "link": "https://monstercat-page-mrseager.vercel.app/",
+      "repasitory": "https://github.com/MrSeager/monstercat-page-mrseager"
     }
   ]
 }
