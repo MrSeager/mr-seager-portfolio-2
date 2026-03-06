@@ -1486,6 +1486,25 @@
       ],
       "link": "https://monstercat-page-mrseager.vercel.app/",
       "repasitory": "https://github.com/MrSeager/monstercat-page-mrseager"
+    },
+    {
+      "id": 80,
+      "image": "/images/080.jpg",
+      "title": "X-Men Character page",
+      "technology": 
+      [
+        "next.js",
+        "react",
+        "tailwind",
+        "typescript"
+      ],
+      "version": 
+      [
+        "desktop",
+        "mobile"
+      ],
+      "link": "https://x-men-page-mrseager.vercel.app/",
+      "repasitory": "https://github.com/MrSeager/x-men-page-mrseager"
     }
   ]
 }
