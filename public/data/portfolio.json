@@ -1505,6 +1505,25 @@
       ],
       "link": "https://x-men-page-mrseager.vercel.app/",
       "repasitory": "https://github.com/MrSeager/x-men-page-mrseager"
+    },
+    {
+      "id": 81,
+      "image": "/images/081.jpg",
+      "title": "GitHub Profile page",
+      "technology": 
+      [
+        "next.js",
+        "react",
+        "tailwind",
+        "typescript"
+      ],
+      "version": 
+      [
+        "desktop",
+        "mobile"
+      ],
+      "link": "https://github-profile-mrseager.vercel.app/",
+      "repasitory": "https://github.com/MrSeager/github-profile-mrseager"
     }
   ]
 }
