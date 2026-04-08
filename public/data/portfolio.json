@@ -1524,6 +1524,26 @@
       ],
       "link": "https://github-profile-mrseager.vercel.app/",
       "repasitory": "https://github.com/MrSeager/github-profile-mrseager"
+    },
+    {
+      "id": 82,
+      "image": "/images/082.jpg",
+      "title": "Grasshopper Home page",
+      "technology": 
+      [
+        "next.js",
+        "react",
+        "tailwind",
+        "css",
+        "typescript"
+      ],
+      "version": 
+      [
+        "desktop",
+        "mobile"
+      ],
+      "link": "https://grasshopper-home-mrseager.vercel.app/",
+      "repasitory": "https://github.com/MrSeager/grasshopper-home-mrseager"
     }
   ]
 }
