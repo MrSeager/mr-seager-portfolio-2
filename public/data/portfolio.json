@@ -1544,6 +1544,26 @@
       ],
       "link": "https://grasshopper-home-mrseager.vercel.app/",
       "repasitory": "https://github.com/MrSeager/grasshopper-home-mrseager"
+    },
+    {
+      "id": 83,
+      "image": "/images/083.jpg",
+      "title": "Stark Library page",
+      "technology": 
+      [
+        "next.js",
+        "react",
+        "tailwind",
+        "css",
+        "typescript"
+      ],
+      "version": 
+      [
+        "desktop",
+        "mobile"
+      ],
+      "link": "https://stark-libpage-mrseager.vercel.app/",
+      "repasitory": "https://github.com/MrSeager/stark-libpage-mrseager"
     }
   ]
 }
