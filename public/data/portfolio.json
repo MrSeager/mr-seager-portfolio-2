@@ -1564,6 +1564,26 @@
       ],
       "link": "https://stark-libpage-mrseager.vercel.app/",
       "repasitory": "https://github.com/MrSeager/stark-libpage-mrseager"
+    },
+    {
+      "id": 84,
+      "image": "/images/084.jpg",
+      "title": "Mr.Seager's music web-player",
+      "technology": 
+      [
+        "next.js",
+        "react",
+        "tailwind",
+        "css",
+        "typescript"
+      ],
+      "version": 
+      [
+        "desktop",
+        "mobile"
+      ],
+      "link": "https://music-player-mrseager.vercel.app/",
+      "repasitory": "https://github.com/MrSeager/music-player-mrseager"
     }
   ]
 }
