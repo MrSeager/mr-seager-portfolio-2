@@ -1584,6 +1584,26 @@
       ],
       "link": "https://music-player-mrseager.vercel.app/",
       "repasitory": "https://github.com/MrSeager/music-player-mrseager"
+    },
+    {
+      "id": 85,
+      "image": "/images/085.jpg",
+      "title": "Starbucks-ish Rewards page",
+      "technology": 
+      [
+        "next.js",
+        "react",
+        "tailwind",
+        "css",
+        "typescript"
+      ],
+      "version": 
+      [
+        "desktop",
+        "mobile"
+      ],
+      "link": "https://starbucksish-page-mrseager.vercel.app/",
+      "repasitory": "https://github.com/MrSeager/starbucksish-page-mrseager"
     }
   ]
 }
