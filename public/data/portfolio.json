@@ -1604,6 +1604,26 @@
       ],
       "link": "https://starbucksish-page-mrseager.vercel.app/",
       "repasitory": "https://github.com/MrSeager/starbucksish-page-mrseager"
+    },
+    {
+      "id": 86,
+      "image": "/images/086.jpg",
+      "title": "Déplacé Maison example page",
+      "technology": 
+      [
+        "next.js",
+        "react",
+        "tailwind",
+        "css",
+        "typescript"
+      ],
+      "version": 
+      [
+        "desktop",
+        "mobile"
+      ],
+      "link": "https://deplace-maison-page-mrseager.vercel.app/",
+      "repasitory": "https://github.com/MrSeager/deplace-maison-page-mrseager"
     }
   ]
 }
