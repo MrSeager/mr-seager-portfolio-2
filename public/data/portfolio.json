@@ -1624,6 +1624,26 @@
       ],
       "link": "https://deplace-maison-page-mrseager.vercel.app/",
       "repasitory": "https://github.com/MrSeager/deplace-maison-page-mrseager"
+    },
+    {
+      "id": 87,
+      "image": "/images/087.jpg",
+      "title": "Foreign exchange currency converter",
+      "technology": 
+      [
+        "next.js",
+        "react",
+        "tailwind",
+        "css",
+        "typescript"
+      ],
+      "version": 
+      [
+        "desktop",
+        "mobile"
+      ],
+      "link": "https://currency-converter-mrseager.vercel.app/",
+      "repasitory": "https://github.com/MrSeager/currency-converter-mrseager"
     }
   ]
 }
