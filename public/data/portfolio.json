@@ -1644,6 +1644,26 @@
       ],
       "link": "https://currency-converter-mrseager.vercel.app/",
       "repasitory": "https://github.com/MrSeager/currency-converter-mrseager"
+    },
+    {
+      "id": 88,
+      "image": "/images/088.jpg",
+      "title": "Hotel booking confirmation page",
+      "technology": 
+      [
+        "next.js",
+        "react",
+        "tailwind",
+        "css",
+        "typescript"
+      ],
+      "version": 
+      [
+        "desktop",
+        "mobile"
+      ],
+      "link": "https://hotelbooking-mrseager.vercel.app/",
+      "repasitory": "https://github.com/MrSeager/hotelbooking-mrseager"
     }
   ]
 }
