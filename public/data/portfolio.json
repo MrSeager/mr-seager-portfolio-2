@@ -1664,6 +1664,25 @@
       ],
       "link": "https://hotelbooking-mrseager.vercel.app/",
       "repasitory": "https://github.com/MrSeager/hotelbooking-mrseager"
+    },
+    {
+      "id": 89,
+      "image": "/images/089.jpg",
+      "title": "Grid landing page",
+      "technology": 
+      [
+        "next.js",
+        "react",
+        "tailwind",
+        "typescript"
+      ],
+      "version": 
+      [
+        "desktop",
+        "mobile"
+      ],
+      "link": "https://grid-landing-mrseager.vercel.app/",
+      "repasitory": "https://github.com/MrSeager/grid-landing-mrseager"
     }
   ]
 }
