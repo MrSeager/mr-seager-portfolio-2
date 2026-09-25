@@ -1683,6 +1683,25 @@
       ],
       "link": "https://grid-landing-mrseager.vercel.app/",
       "repasitory": "https://github.com/MrSeager/grid-landing-mrseager"
+    },
+    {
+      "id": 90,
+      "image": "/images/090.jpg",
+      "title": "Features page",
+      "technology": 
+      [
+        "next.js",
+        "react",
+        "tailwind",
+        "typescript"
+      ],
+      "version": 
+      [
+        "desktop",
+        "mobile"
+      ],
+      "link": "https://features-page-mrseager.vercel.app/",
+      "repasitory": "https://github.com/MrSeager/features-page-mrseager"
     }
   ]
 }
